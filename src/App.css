@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+:root {
+    --primary:#495E57;
+    --primary-2:#F4CE14;
+    --Secondary-1:#EE9972;
+    --Secondary-2:#FBDABB;
+    --Highlight-1:#EDEFEE;
+    --Highlight-2:#333333
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header{
+    padding: 10px;
+    width: 100%;
+    height:auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-header .title{
+    margin: 10px 10px 0 10px;
+    color:var(--primary-2);
+    font-weight: normal;
+    font-size: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header p{
+    color:white;
+    font-family: 'Markazi Text', serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header .city{
+    font-size: 2.5rem;
+    margin: -10px 10px 10px 10px;
 }
+
+.description-area{
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.description-area .description{
+    width: 50%;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.description-area .description-img{
+    padding-right: 10px;
+    width: 50%;
+    margin-right: 10px;
+
+}
+
+.description-area .description-img img{
+    object-fit: cover;
+    border-radius: 10px;
+    overflow:hidden
+}
+
+.form-area{
+    max-width: 500px;
+    height:auto;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.form-area .form-title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--Highlight-1);
+}
+
+.form-area form {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+
+.form-area form .data_time-area{
+    width: 100%;
+}
+
+.form-area form .email{
+    width: 100%;
+}
+
+.form-area form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-area form input{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: var(--Highlight-1);
+    border-radius: 5px;
+}
+
+.form-area form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: var(--Highlight-1);
+    border-radius: 5px;
+}
+
+.form-area .guests-area{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.form-area .guests-area .counter{
+    padding: 5px;
+    width: 100px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-area .guests-area .counter .control__btn{
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    line-height:0;
+    text-align:center;
+    border:none;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.form-area .name-area{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-area .name-area div{
+    width: 100%;
+}
+
+.form-area .special{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.form-area .btn{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--primary-2);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+
+}
+
